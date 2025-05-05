@@ -37,7 +37,12 @@ export default withNuxt(antfu({
       tsconfigRootDir: ".",
     }],
     "unicorn/filename-case": ["error", {
-      case: "kebabCase",
+      cases: {
+        camelCase: true,
+        kebabCase: true,
+        pascalCase: true,
+        snakeCase: true,
+      },
       ignore: ["README.md"],
     }],
   },
